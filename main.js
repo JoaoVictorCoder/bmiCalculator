@@ -11,7 +11,7 @@ function calculate() {
     let height = parseFloat(heightInput.value / 100)
     let isHeightDecimal = (heightInput.value).toString().includes('.');
     
-    if(!isNaN(weight && height) && ((weight && height) > 0) && (weight < 300 && height < 300) && !isHeightDecimal){
+    if(weight > 0 && height > 0 && weight <= 500 && (heightInput.value) <= 300 && !isHeightDecimal){
     let BMI = (weight) / (height * height)
 
     console.log(BMI.toFixed(2))
