@@ -9,10 +9,9 @@ function calculate() {
     document.body.appendChild(e)
     let weight = parseFloat(weightInput.value)
     let height = parseFloat(heightInput.value / 100)
-    let isWeightDecimal = weight.toString().includes('.' || ',');
-    let isHeightDecimal = height.toString().includes('.' || ',');
+    let isHeightDecimal = (heightInput.value).toString().includes('.');
     
-    if(!isNaN(weight && height) && (weight > 0 && height > 0) && (weight < 300 && height < 300) && (!isWeightDecimal || !isHeightDecimal)){
+    if(!isNaN(weight && height) && (weight > 0 && height > 0) && (weight < 300 && height < 300) && !isHeightDecimal){
     let BMI = (weight) / (height * height)
 
     console.log(BMI.toFixed(2))
