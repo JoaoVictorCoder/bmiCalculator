@@ -1,8 +1,8 @@
 const weightInput = document.getElementById("weightInput")
 const heightInput = document.getElementById("heightInput")
 
-const bmiResult = document.createElement("h1") //elemento h1 que contem o resultado
-bmiResult.setAttribute("id", "result") //adiciona um atributo ao elemento, no caso o elemento id de valor result
+const bmiResult = document.createElement("h1") //element that contains the result
+bmiResult.setAttribute("id", "result") //add an id attribute for bmiResult so it gets style
 
 function calculate() {
     document.body.appendChild(bmiResult)
